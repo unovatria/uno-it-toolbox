@@ -1,13 +1,14 @@
 @echo off
 chcp 65001 >nul
 :: Uygulama
-title Uno It Toolbox V0.1
+title Uno It Toolbox
+set titlest=Uno It Toolbox - V0.2
 setlocal enabledelayedexpansion
 
 :: General
 set general_backtomainmenu=Ana Menüye Dön
 ::#region:: Ana menü
-set menu_main=Ana Menü
+set menuTITLE=Ana Menü
 set menu_system=Sistem Bilgileri
 set menu_network=Ağ İşlemleri
 set menu_printer=Yazıcı İşlemleri
@@ -17,6 +18,7 @@ set menu_exit=Çıkış Yap
 set menu_select=Bir işlem numarası seçin:
 ::#endregion
 ::#region:: Sistem Bilgileri
+set systemInfTITLE=Sistem Bilgileri
 set systemInf_main=Bilgisayardaki Aktif Kullanıcı Adı
 set systemInf_serial=Bilgisayarın Seri Numarası
 set systemInf_brand=Bilgisayarın Marka ve Modeli
@@ -29,6 +31,7 @@ set systemInfAlt_21=Seri numarası alınamadı
 set systemInfAlt_31=Marka ve model bilgisi alınamadı
 ::#endregion
 ::#region:: Ağ İşlemleri
+set networkTITLE=Ağ İşlemleri
 set network_showip=IP Adresi Görüntüle
 set network_pingtest=Ping Testi
 set network_tracert=Tracert (Ağ İzleme)
@@ -38,13 +41,30 @@ set network_cleardnscache=DNS Önbelleğini Temizle
 set networkAlt_enteripping=Ping için adres girin
 set networkAlt_enteriptracert=Ping için adres girin
 ::#endregion
+::#region:: Yazıcı İşlemleri
+set printerTITLE=Yazıcı İşlemleri
+set printer_load=Yüklü Yazıcıları Listele
+set printer_show=Yazıcı Durumunu Göster
+set printer_restart=Yazıcıyı Yeniden Başlat
+set printer_clear=Yazıcı Kuyruğunu Temizle
+::#endregion
+::#region:: Disk İşlemleri
+set diskTITLE=Disk İşlemleri
+set disk_check=Disk Durumunu Kontrol Et
+set disk_scan=Sabit Diski Tara
+set disk_show=Depolama Alanını Göster
+::#endregion
+::#region:: Güvenlik İşlemleri
+set securityTITLE=Güvenlik İşlemleri
+set security_firewallopen=Güvenlik Duvarını Aç
+set security_firewallclose=Güvenlik Duvarını Kapat
+::#endregion
 
 ::#region:: main_menu
 :main_menu
 cls
-echo ============================================
-echo  %title%
-echo ============================================
+echo  %titlest%
+echo ================== %menuTITLE% ==================
 echo 1. %menu_system%
 echo 2. %menu_network%
 echo 3. %menu_printer%
@@ -67,7 +87,7 @@ goto main_menu
 ::#region:: system_menu
 :system_menu
 cls
-echo ================== Sistem Bilgileri ==================
+echo ================== %systemInfTITLE% ==================
 echo 1. %systemInf_main%
 echo 2. %systemInf_serial%
 echo 3. %systemInf_brand%
@@ -106,7 +126,7 @@ goto system_menu
 ::#region:: network_menu
 :network_menu
 cls
-echo ================== Ağ İşlemleri ==================
+echo ================== %networkTITLE% ==================
 echo 1. %network_showip%
 echo 2. %network_pingtest%
 echo 3. %network_tracert%
@@ -129,12 +149,12 @@ goto network_menu
 ::#region:: printer_menu
 :printer_menu
 cls
-echo ================== Yazıcı İşlemleri ==================
-echo 1. Yüklü Yazıcıları Listele
-echo 2. Yazıcı Durumunu Göster
-echo 3. Yazıcıyı Yeniden Başlat
-echo 4. Yazıcı Kuyruğunu Temizle
-echo 5. Ana Menüye Dön
+echo ================== %printerTITLE% ==================
+echo 1. %printer_load%
+echo 2. %printer_show%
+echo 3. %printer_restart%
+echo 4. %printer_clear%
+echo 5. %general_backtomainmenu%
 echo ======================================================
 set /p print_choice=%menu_select%
 
@@ -150,11 +170,11 @@ goto printer_menu
 ::#region:: disk_menu
 :disk_menu
 cls
-echo ================== Disk İşlemleri ==================
-echo 1. Disk Durumunu Kontrol Et
-echo 2. Sabit Diski Tara
-echo 3. Depolama Alanını Göster
-echo 4. Ana Menüye Dön
+echo ================== %diskTITLE% ==================
+echo 1. %disk_check%
+echo 2. %disk_scan%
+echo 3. %disk_show%
+echo 4. %general_backtomainmenu%
 echo ================================================
 set /p disk_choice=%menu_select%
 
@@ -169,10 +189,10 @@ goto disk_menu
 ::#region security_menu
 :security_menu
 cls
-echo ================== Güvenlik İşlemleri ==================
-echo 1. Güvenlik Duvarını Aç
-echo 2. Güvenlik Duvarını Kapat
-echo 3. Ana Menüye Dön
+echo ================== %securityTITLE% ==================
+echo 1. %security_firewallopen%
+echo 2. %security_firewallclose%
+echo 3. %general_backtomainmenu%
 echo =========================================================
 set /p sec_choice=%menu_select%
 
