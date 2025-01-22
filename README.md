@@ -52,8 +52,6 @@ The application provides quick access to system information, hardware details, n
 
 ## 📷 Görseller | Screenshots
 
-Türkçe ve İngilizce versiyonlardan alınmış ekran görüntüleri:**Screenshots from Turkish and English versions:**
-
 - ![indir](pictures/download.png)
 - ![run](pictures/run_as_admin.png)
 - ![en](pictures/ui_en.png)
