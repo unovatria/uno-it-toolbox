@@ -2,7 +2,7 @@
 chcp 65001 >nul
 :: Uygulama
 title Uno It Toolbox
-set titlest=Uno It Toolbox - V0.3
+set titlest=Uno It Toolbox - V0.4
 setlocal enabledelayedexpansion
 
 ::#region::: START OF LANGUAGE SECTION
