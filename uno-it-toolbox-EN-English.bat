@@ -6,58 +6,58 @@ set titlest=Uno It Toolbox - V0.3
 setlocal enabledelayedexpansion
 
 :: General
-set general_backtomainmenu=Ana Menüye Dön
+set general_backtomainmenu=Return to Main Menu
 ::#region:: Ana menü
-set menuTITLE=Ana Menü
-set menu_system=Sistem Bilgileri
-set menu_network=Ağ İşlemleri
-set menu_printer=Yazıcı İşlemleri
-set menu_disk=Disk İşlemleri
-set menu_security=Güvenlik İşlemleri
-set menu_exit=Çıkış Yap
-set menu_select=Bir işlem numarası seçin:
+set menuTITLE=Main Menu
+set menu_system=System Information
+set menu_network=Network Operations
+set menu_printer=Printer Operations
+set menu_disk=Disk Operations
+set menu_security=Security Operations
+set menu_exit=Exit
+set menu_select=Select an operation number:
 ::#endregion
 ::#region:: Sistem Bilgileri
-set systemInfTITLE=Sistem Bilgileri
-set systemInf_main=Bilgisayardaki Aktif Kullanıcı Adı
-set systemInf_serial=Bilgisayarın Seri Numarası
-set systemInf_brand=Bilgisayarın Marka ve Modeli
-set systemInf_hardware=Bilgisayar Donanım Bilgisi
-set systemInf_lic=Windows Lisans Durumu
+set systemInfTITLE=System Information
+set systemInf_main=Active Username on the Computer
+set systemInf_serial=Computer Serial Number
+set systemInf_brand=Computer Brand and Model
+set systemInf_hardware=Computer Hardware Information
+set systemInf_lic=Windows License Status
 :: alt
-set systemInfAlt_11=Bilgisayar Adı
-set systemInfAlt_12=Kullanıcı Adı
-set systemInfAlt_21=Seri numarası alınamadı
-set systemInfAlt_31=Marka ve model bilgisi alınamadı
+set systemInfAlt_11=Computer Name
+set systemInfAlt_12=Username
+set systemInfAlt_21=Serial number could not be retrieved
+set systemInfAlt_31=Brand and model information could not be retrieved
 ::#endregion
 ::#region:: Ağ İşlemleri
-set networkTITLE=Ağ İşlemleri
-set network_showip=IP Adresi Görüntüle
-set network_pingtest=Ping Testi
-set network_tracert=Tracert (Ağ İzleme)
+set networkTITLE=Network Operations
+set network_showip=View IP Address
+set network_pingtest=Ping Test
+set network_tracert=Tracert (Network Trace)
 set network_telnet=Telnet (TNC)
-set network_cleardnscache=DNS Önbelleğini Temizle
+set network_cleardnscache=Clear DNS Cache
 :: alt
-set networkAlt_enteripping=Ping için adres girin
-set networkAlt_enteriptracert=Ping için adres girin
+set networkAlt_enteripping=Enter an address for ping
+set networkAlt_enteriptracert=Enter an address for tracert
 ::#endregion
 ::#region:: Yazıcı İşlemleri
-set printerTITLE=Yazıcı İşlemleri
-set printer_load=Yüklü Yazıcıları Listele
-set printer_show=Yazıcı Durumunu Göster
-set printer_restart=Yazıcıyı Yeniden Başlat
-set printer_clear=Yazıcı Kuyruğunu Temizle
+set printerTITLE=Printer Operations
+set printer_load=List Installed Printers
+set printer_show=Show Printer Status
+set printer_restart=Restart Printer
+set printer_clear=Clear Printer Queue
 ::#endregion
 ::#region:: Disk İşlemleri
-set diskTITLE=Disk İşlemleri
-set disk_check=Disk Durumunu Kontrol Et
-set disk_scan=Sabit Diski Tara
-set disk_show=Depolama Alanını Göster
+set diskTITLE=Disk Operations
+set disk_check=Check Disk Status
+set disk_scan=Scan Hard Drive
+set disk_show=Show Storage Space
 ::#endregion
 ::#region:: Güvenlik İşlemleri
-set securityTITLE=Güvenlik İşlemleri
-set security_firewallopen=Güvenlik Duvarını Aç
-set security_firewallclose=Güvenlik Duvarını Kapat
+set securityTITLE=Security Operations
+set security_firewallopen=Enable Firewall
+set security_firewallclose=Disable Firewall
 ::#endregion
 
 ::#region:: main_menu
