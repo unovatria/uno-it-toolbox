@@ -2,11 +2,9 @@
 
 ## 📜 Hakkında | About  
 **Türkçe:**  
-Bu projede, günlük sistem işlemlerini kolaylaştırmak için tasarlanmış çeşitli `.bat` (batch) dosyalarını bulabilirsiniz.  
 Uygulama; sistem bilgileri, donanım detayları, ağ ayarları, disk işlemleri ve güvenlik ayarlarına hızlı erişim sağlar. Ayrıca yazıcı işlemleri gibi özelliklerle kullanımı oldukça pratik hale getirir.
 
 **English:**  
-This project contains various `.bat` (batch) files designed to simplify daily system operations.  
 The application provides quick access to system information, hardware details, network settings, disk operations, and security configurations. It also includes practical features such as printer operations.
 
 ---
